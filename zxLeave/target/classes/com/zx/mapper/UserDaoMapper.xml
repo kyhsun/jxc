@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zx.dao.UserDao">
+  <select id="findUser" parameterType="com.zx.pojo.Users" resultType="com.zx.pojo.Users">
+  	select * from  Users where username = #{user.username} and password =#{user.password}
+  </select>
+  <select id="findTreeById" parameterType="java.lang.Integer" resultType="com.zx.pojo.TreeMenu">
+  select t.* from users u LEFT JOIN userroles ur on u.UserID= ur.UserID
+	LEFT JOIN roles r on  r.roleid=ur.roleid
+	LEFT JOIN rolepermissions rm on rm.RoleID=r.roleid
+	LEFT JOIN treemenu t on t.TreeMenuID = rm.TreeID
+	where u.UserID = #{id}
+  
+  </select>
+	<select id="selByPar" resultType="com.zx.pojo.Users" parameterType="com.zx.pojo.Users">
+	select * from users
+	<where>
+		<if test="user.position == 3">
+			position = #{user.position}+2
+		</if>
+		<if test="user.position != 3">
+			position = #{user.position}+1
+		</if>
+		<if test="user.position == 1">
+		and AbteilungId = #{user.abteilungid}
+		</if>
+	</where> 
+	
+	</select>
+</mapper>
