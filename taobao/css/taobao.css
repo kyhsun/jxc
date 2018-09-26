@@ -1,0 +1,156 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+bady{
+	color: #3C3C3C;
+}
+ul{
+	list-style: none;
+}
+li{
+	float: left;
+	margin-left: 3px;
+	color: #F40;
+	text-align: center;
+	font-size: 12px;
+}
+li:hover{
+	background-color: #ff9000;
+	color: #000;
+	opacity:0.1;
+}
+
+.nav{
+	width: 100%;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #eee;
+
+}
+.list-nav{
+	margin:0 auto;
+	width: 1080px;
+	background-color:  #f5f5f5;
+	height: 35px;
+}
+.left{
+	float: left;
+	/*margin-top: 5px;*/
+	font-size: 12px;
+	line-height: 35px;
+}
+.left::before {
+	content: "";
+	background-image: 
+
+}
+.right{
+	float: right;
+	/*margin-top: 5px;*/
+	font-size: 12px;
+	line-height: 35px;
+}
+.right::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.left::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.clear{
+	clear: both;
+}
+.nav .list-nav .left .yhm img{
+	width: 10px;
+	height: 10px;
+	margin-top: 2px;
+}
+.nav .list-nav .left .yhm{
+	margin-left: 15px;
+}
+.nav .list-nav .left .xx{
+	margin-left: 15px;
+}
+.nav .list-nav .left .sjgtb{
+	margin-left: 15px;
+}
+.nav .list-nav .right span{
+	margin-right: 15px;
+}
+.top{
+	float: left;
+	background-color: #FFF;
+	padding-top: 24px;
+	height: 97px;
+	
+}
+.logo .logo-bd{
+	display: block;
+	margin-left: 22px;
+	padding-top: 58px;
+	width: 142px;
+	height: 0;
+	overflow: hidden;
+	text-indent: -9999px;
+	background-image:url(../image/tabo.png); ;
+}
+.logo .logo-bd :: after{
+	content: ""淘宝网;
+	display: block;
+
+}
+.logo{
+	/*float: left;*/
+	position: absolute;
+	width: 142px;
+	height: 58px;
+}
+.sstop{
+	margin-left: 300px;
+	display: block;
+}
+/*.sstop::after{
+	content: "";
+	display: block;
+	clear: all;
+}*/
+ul::after{
+	content: "";
+	display: block;
+	clear: all;
+}
+.in1{
+	margin-left: 290px;
+	padding: 6px 0;
+	width: 480px;
+	height: 24px;
+	text-indent: 10px;
+	line-height: 24px;
+	outline: 0;
+	background: #FFF;
+	margin-top: 2px;
+	border-radius: 20px;
+}
+.ssin{
+	font-size: 18px;
+font-weight: 700;
+color: #FFF;
+background-color: #FF4200;
+cursor: pointer;
+height: 100%;
+border: none;
+width: 100%;
+}
+.tj{
+	font-size: 18px;
+	background-color: #FF4200;
+	cursor: pointer;
+	display: inline-block;
+	/*border-radius: 20px;*/
+	margin-left: -50px;
+	line-height: 30px;
+}
